@@ -4,7 +4,7 @@
         <div class="form-group">
             <label>Title</label>
             <input [(ngModel)]="currentPost.title" type="text" class="form-control" name="title" #title="ngModel"
-                required minlength="5" maxlength="15" [ngClass]="{'is-invalid':title.errors && title.touched}">
+                required minlength="5" maxlength="25" [ngClass]="{'is-invalid':title.errors && title.touched}">
             <div *ngIf="title.errors?.required" class="invalid-feedback">
                 Title required
             </div>
